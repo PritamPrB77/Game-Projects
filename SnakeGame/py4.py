@@ -2,7 +2,7 @@ import pygame
 import random
 import os
 import time
-
+import sys
 pygame.mixer.init()
 pygame.init()
 
@@ -199,6 +199,7 @@ def gameloop():
         clock.tick(fps)
 
     pygame.quit()
-    quit()
+    sys.exit()
+    # quit()
 
 welcome()
